@@ -1,0 +1,334 @@
+/*
+ * 重置
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+/**
+ * 网格
+ */
+.seven {
+  width: 42%;
+}
+.nine {
+  width: 54%;
+}
+.sixteen {
+  width: 98%;
+}
+/**
+ * 主样式
+ */
+.section {
+  padding: 70px 0;
+}
+/**
+ * 第一个section
+ */
+.section.top {
+  padding-top: 120px;
+  position: relative;
+  overflow: hidden;
+}
+.section.purple {
+  background: #5a4776 url(https://static-assets.strikinglycdn.com/images/landing2/blank.png) top center no-repeat;
+  text-align: center;
+}
+/**
+ * video背景
+ */
+.section.purple .bg-video-shade {
+  opacity: 0;
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(49,40,72,0.6);
+  z-index: 2;
+}
+.section.purple .spread {
+  background-image: url(https://static-assets.strikinglycdn.com/images/landing4/spread.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  opacity: .075;
+}
+.section.purple iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+/**
+ * 内容区域
+ */
+.section.top .container {
+  width: 82%;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1500px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+.section.top .container .columns {
+  float: left;
+  display: inline;
+  margin-left: 1.04166666%;
+  margin-right: 1.04166666%;
+  text-align: center;
+}
+.section.purple .logo {
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 1;
+}
+.section.top h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.section.purple .tagline {
+  color: #d2c4f9;
+  font-size: 22px;
+  line-height: 1.7;
+  margin-bottom: 60px;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.15);
+}
+.section.top .learn-more {
+  font-family: 'brandon',sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #b4a8d6;
+  letter-spacing: 2px;
+  margin-top: 75px;
+  cursor: pointer;
+  position: relative;
+}
+.section.top .learn-more .arrow {
+  margin: 0 auto;
+  -webkit-transform: scaleY(.66);
+  transform: scaleY(.66);
+}
+.section.top .learn-more .arrow:before {
+  content: ' ';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #c8bbee;
+  border-top: 0;
+  border-left: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/**
+ * 下摆
+ */
+.sep-dual.sep-gray:before, .sep-dual.sep-gray:after {
+  background: #f0f4f8;
+}
+.sep-dual:before, .sep-dual:after {
+  content: ' ';
+  display: block;
+  width: 2000px;
+  height: 250px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: -130px;
+  z-index: 2;
+  transform: rotate(-7deg);
+}
+.sep-dual:after {
+  margin-left: -2000px;
+  transform: rotate(7deg);
+}
+
+/**
+ * 第二部分
+ */
+.section.gray {
+  background: #f0f4f8;
+}
+/**
+ * 内容区域
+ */
+.section.gray .container {
+  position: relative;
+  width: 82%;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1500px;
+}
+/**
+ * 标题文字、底部a链接
+ */
+.section.gray .title-group, .section.gray .btn-link  {
+  text-align: center;
+  margin-bottom: 60px;
+}
+/**
+ * a链接样式
+ */
+.section.gray .btn-link a {
+  display: inline-block;
+  zoom: 1;
+  font-family: 'brandon',sans-serif;
+  font-weight: 400;
+  border: 1px solid #8367ac;
+  padding: 6px 18px;
+  letter-spacing: 1px;
+  color: #8367ac;
+  border-radius: 3px;
+  font-size: 100%;
+  transition: all .15s;
+}
+.section.gray .btn-link a:hover {
+  border-color: #a481d7;
+  color: #a481d7;
+  background: rgba(255,255,255,0.5);
+}
+/**
+ * 模板
+ */
+.section.gray .profile-row {
+  margin-bottom: 80px;
+  zoom: 1;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+/**
+ * 列
+ */
+.columns {
+  float: left;
+  display: inline;
+  margin-left: 2.04166666%;
+  margin-right: 2.04166666%;
+}
+.profile-column {
+  align-items: center;
+}
+/**
+ * 电脑、手机 外容器
+ */
+.monitor-wrapper {
+  position: relative;
+}
+/**
+ * 手机
+ */
+.phone {
+  position: absolute;
+  width: 21%;
+  top: 31%;
+  left: 78%;
+  padding: 4% .5%;
+  border-radius: 16px;
+  border: 2px solid #9fa5ad;
+  background: #ecf2f4;
+  background: linear-gradient(to bottom left,#fff,#e0e6e8);
+  z-index: 10;
+}
+.phone-inner {
+  position: relative;
+  padding-bottom: 166.67%;
+  box-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+.phone-inner img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+/**
+ * 电脑
+ */
+.monitor {
+  padding: 3%;
+  margin: 0 auto;
+  max-width: 88%;
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid #9fa5ad;
+  background: #ecf2f4;
+  background: linear-gradient(to bottom left,#ecf2f4,#d0d5d7);
+}
+.monitor-inner {
+  position: relative;
+  padding-bottom: 60%;
+  box-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+.monitor-inner img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.monitor-inner:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  bottom: -17%;
+  width: 118%;
+  left: -9%;
+  height: 18%;
+  background: #9fa5ad;
+  background: linear-gradient(to bottom,#ecf2f4,#b7bcc6 20%,#838b97);
+  margin-top: 5px;
+  border-radius: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: perspective(300px) rotateX(-75deg);
+  transform: perspective(300px) rotateX(-75deg);
+  box-shadow: inset 0 3px #7f848a, 0 40px 150px rgba(0,0,0,0.15);
+}
+/**
+ * 介绍部分
+ */
+.profile {
+  margin-top: 1%;
+  max-width: 80%;
+}
+.profile img {
+  display: inline-block;
+  max-height: 100px;
+  height: auto;
+  width: 100px;
+  border-radius: 100px;
+  margin-bottom: 15px;
+}
+.profile h4 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #5f3f39;
+}
+.profile p.title {
+  color: #ad8379;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.profile p.quote {
+  font-size: 16px;
+  line-height: 1.7;
+}
+.profile-row.right {
+  flex-direction: row-reverse;
+}
